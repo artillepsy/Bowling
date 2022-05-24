@@ -34,7 +34,7 @@ namespace Gates
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.transform.parent.CompareTag("Ball")) return;
+            if (!other.CompareTag("Ball")) return;
             OnActivated?.Invoke();       
             switch (operationType)
             {

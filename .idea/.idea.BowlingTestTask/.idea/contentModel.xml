@@ -266,6 +266,7 @@
           <e p="Attractor" t="Include">
             <e p="BallAttractor.cs" t="Include" />
             <e p="BallAttractorMovement.cs" t="Include" />
+            <e p="CameraDampingChanger.cs" t="Include" />
           </e>
           <e p="BallManipulation" t="Include">
             <e p="BallCountChanger.cs" t="Include" />

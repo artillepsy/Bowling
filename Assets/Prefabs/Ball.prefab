@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3912237261990993000}
   m_Layer: 6
   m_Name: Mesh
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,8 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60edcaebde440ef9d06cdc6f8fc0947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundOffset: 0
   rb: {fileID: 4572324639277354039}
   forceFalloffDistance: 1
+  forceFalloffOffsetY: 0.1
 --- !u!114 &3956895461795108366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,10 +201,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3912237262155316236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 377d65a34cf74a78b1f40908d7814d83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4572324639277354039}
-  unfreezeDelay: 0.5

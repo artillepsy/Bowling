@@ -83,7 +83,7 @@ namespace BallManipulation
         private void UpdateBallPosition(Ball ball)
         {
             var spawnPos = new Vector3(attractor.position.x, 0, attractor.position.z);
-            var spawnOffsetXZ = Random.insideUnitSphere;
+            var spawnOffsetXZ = Random.insideUnitSphere * 0.2f;
 
             spawnOffsetXZ.y = 0;
             spawnPos += spawnOffsetXZ;
