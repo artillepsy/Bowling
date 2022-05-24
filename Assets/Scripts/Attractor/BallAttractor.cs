@@ -1,7 +1,8 @@
+using System;
 using System.Collections.Generic;
 using Balls;
+using Obstacles;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Attractor
 {
@@ -10,8 +11,11 @@ namespace Attractor
         [SerializeField] private List<BallMovement> balls;
         [SerializeField] private float attractForce = 50f;
 
-        public List<BallMovement> Balls => balls;
-        
+        private void Start()
+        {
+            Obstacle.OnBallKicked.AddListener((ball) => balls.Remove(ball.Movement));
+        }
+
         private void FixedUpdate()
         {
             foreach (var ball in balls)

@@ -20,20 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/AttractorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/AttractorMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Drag/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttraction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/AttractorMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallComponents.cs" />
@@ -68,8 +72,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653386658120</updated>
-      <workItem from="1653386679147" duration="21741000" />
+      <workItem from="1653386679147" duration="25308000" />
     </task>
     <servers />
   </component>

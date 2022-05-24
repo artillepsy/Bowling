@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Attractor;
+﻿using System.Collections.Generic;
 using Balls;
 using Obstacles;
 using UnityEngine;
@@ -10,10 +8,9 @@ namespace BallManipulation
 {
     public class BallCountChanger : MonoBehaviour
     {
+        [SerializeField] private Transform attractor;
         [SerializeField] private int debug_spawnCount;
-        [SerializeField] private BallAttractor ballAttractor;
         [SerializeField] private Ball ballPrefab;
-        
         private List<Ball> _ballsPool = new List<Ball>();
         
         public void OnClickSpawn()
@@ -26,14 +23,13 @@ namespace BallManipulation
 
         private void Start()
         {
-            Obstacle.OnBallKicked.AddListener(OnBallKicked);
+            Obstacle.OnBallKicked.AddListener(DeactivateBall);
         }
 
-        private void OnBallKicked(Ball ball)
+        private void DeactivateBall(Ball ball)
         {
             ball.gameObject.SetActive(false);
             _ballsPool.Add(ball);
-            ballAttractor.Balls.Remove(ball.Movement);
         }
 
         private bool TryGetBallFromPool(out Ball ball)
