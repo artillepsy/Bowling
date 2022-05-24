@@ -4,16 +4,19 @@ namespace Obstacles
 {
     public class Pin : Obstacle
     {
-        [SerializeField] private Collider selfCollider;
+        [SerializeField] private GameObject child;
+        [SerializeField] private string ignoreBallsLayerName = "Ignore balls";
         [SerializeField] private Rigidbody rb;
         [SerializeField] private float kickImpulse = 4f;
         
-        private bool _kicked = false;
-        protected void OnTriggerEnter(Collider otherCollider)
+        protected void OnCollisionEnter(Collision collision)
         {
-            if (_kicked) return;
-            base.OnTriggerEnter(otherCollider);
-            rb.AddForceAtPosition();
+            if (!collision.collider.transform.parent.CompareTag("Ball")) return;
+            Debug.Log("kick");
+            base.OnCollisionEnter(collision);
+            child.layer = LayerMask.NameToLayer(ignoreBallsLayerName);
+            var direction = (collision.contacts[0].point - collision.collider.transform.parent.position).normalized;
+            rb.AddForce(direction * kickImpulse, ForceMode.Impulse);
         }
     }
 }

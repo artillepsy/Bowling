@@ -7,9 +7,9 @@ namespace Obstacles
     {
         public static UnityEvent OnBallTouched = new UnityEvent();
 
-        protected void OnTriggerEnter(Collider otherCollider)
+        protected void OnCollisionEnter(Collision collision)
         {
-            if (!otherCollider.transform.parent.CompareTag("Ball")) return;
+            if (!collision.collider.transform.parent.CompareTag("Ball")) return;
             OnBallTouched?.Invoke();
         }
     }
