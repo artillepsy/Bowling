@@ -264,10 +264,14 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Attractor" t="Include">
-            <e p="AttractorMovement.cs" t="Include" />
             <e p="BallAttractor.cs" t="Include" />
+            <e p="BallAttractorMovement.cs" t="Include" />
+          </e>
+          <e p="BallManipulation" t="Include">
+            <e p="BallCountChanger.cs" t="Include" />
           </e>
           <e p="Balls" t="Include">
+            <e p="Ball.cs" t="Include" />
             <e p="BallMovement.cs" t="Include" />
             <e p="BallScaler.cs" t="Include" />
           </e>

@@ -2,7 +2,7 @@
 
 namespace Attractor
 {
-    public class AttractorMovement : MonoBehaviour
+    public class BallAttractorMovement : MonoBehaviour
     {
         [SerializeField] private float zSpeed = 3f;
         [SerializeField] private float xSpeed = 1f;
