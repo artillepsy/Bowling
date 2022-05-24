@@ -11,9 +11,9 @@ namespace Gates
         [SerializeField] private int secondArg = 10;
         [SerializeField] private TextMeshPro operationLabel;
         
-        public UnityEvent OnActivated = new UnityEvent(); 
+        [SerializeField] UnityEvent OnActivated = new UnityEvent(); 
         public static UnityEvent<Func<int, int, int>, int> OnGateActivated = new UnityEvent<Func<int, int, int>, int>();
-
+        
         private void Awake()
         {
             string str = "";
@@ -34,9 +34,8 @@ namespace Gates
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("trigger");
             if (!other.transform.parent.CompareTag("Ball")) return;
-                
+            OnActivated?.Invoke();       
             switch (operationType)
             {
                 case OperationType.Difference:
@@ -49,7 +48,6 @@ namespace Gates
                     OnGateActivated?.Invoke(GateOperations.Sum, secondArg);
                     break;
             }
-            gameObject.SetActive(false);
         }
     }
 }

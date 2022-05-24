@@ -50,8 +50,8 @@ namespace BallManipulation
                     ball = Instantiate(ballPrefab);
                 }
                 UpdatePosition(ball);
-                ball.Scaler.StartGrow();
                 ball.gameObject.SetActive(true);
+                ball.Scaler.StartGrow();
                 _balls.Add(ball);
                 OnBallSpawned?.Invoke(ball);
             }
@@ -77,7 +77,7 @@ namespace BallManipulation
         
         private void UpdatePosition(Ball ball)
         {
-            var spawnPos = new Vector3(transform.position.x, 0, transform.position.z);
+            var spawnPos = new Vector3(attractor.position.x, 0, attractor.position.z);
             var spawnOffsetXZ = Random.insideUnitSphere;
 
             spawnOffsetXZ.y = 0;
