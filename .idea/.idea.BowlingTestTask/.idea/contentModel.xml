@@ -273,8 +273,10 @@
           </e>
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
+            <e p="BallDisappearVFX.cs" t="Include" />
             <e p="BallMovement.cs" t="Include" />
             <e p="BallScaler.cs" t="Include" />
+            <e p="BallVerticalPosFreezer.cs" t="Include" />
           </e>
           <e p="Gates" t="Include">
             <e p="Gate.cs" t="Include" />

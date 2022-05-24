@@ -13,12 +13,12 @@ namespace Balls
         public void StartGrow()
         {
             transform.localScale = Vector3.zero;
-            StartCoroutine(ScalingCO());
+            StartCoroutine(ChangeScaleCO());
         }
 
         private void Awake() => _scaleIncrement = 1f / scaleTime;
 
-        private IEnumerator ScalingCO() 
+        private IEnumerator ChangeScaleCO() 
         {
             var scale = 0f;
 
