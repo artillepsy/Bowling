@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using BallManipulation;
 using Balls;
 using Obstacles;
 using UnityEngine;
@@ -14,6 +15,7 @@ namespace Attractor
         private void Start()
         {
             Obstacle.OnBallKicked.AddListener((ball) => balls.Remove(ball.Movement));
+            BallCountChanger.OnBallSpawned.AddListener((ball) => balls.Add(ball.Movement));
         }
 
         private void FixedUpdate()

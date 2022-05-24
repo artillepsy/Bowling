@@ -9,11 +9,13 @@ namespace Balls
         [Min(0.001f)]
         [SerializeField] private float scaleTime = 0.3f;
         private float _scaleIncrement;
+        
+        public void StartGrow()
+        {
+            transform.localScale = Vector3.zero;
+            StartCoroutine(ScalingCO());
+        }
 
-        public void ResetScale() => transform.localScale = Vector3.zero;
-        
-        public void StartScale() => StartCoroutine(ScalingCO());
-        
         private void Awake() => _scaleIncrement = 1f / scaleTime;
 
         private IEnumerator ScalingCO() 

@@ -269,6 +269,7 @@
           </e>
           <e p="BallManipulation" t="Include">
             <e p="BallCountChanger.cs" t="Include" />
+            <e p="BallPool.cs" t="Include" />
           </e>
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
@@ -277,6 +278,7 @@
           </e>
           <e p="Gates" t="Include">
             <e p="Gate.cs" t="Include" />
+            <e p="GateDeactivator.cs" t="Include" />
             <e p="GateOperations.cs" t="Include" />
             <e p="OperationType.cs" t="Include" />
           </e>

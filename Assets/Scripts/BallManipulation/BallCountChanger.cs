@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Balls;
+using Gates;
 using Obstacles;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = UnityEngine.Random;
 
 namespace BallManipulation
@@ -9,52 +12,78 @@ namespace BallManipulation
     public class BallCountChanger : MonoBehaviour
     {
         [SerializeField] private Transform attractor;
-        [SerializeField] private int debug_spawnCount;
         [SerializeField] private Ball ballPrefab;
-        private List<Ball> _ballsPool = new List<Ball>();
-        
-        public void OnClickSpawn()
-        {
-            for (var i = 0; i < debug_spawnCount; i++)
-            {
-                SpawnBall();
-            }
-        }
+        private List<Ball> _balls = new List<Ball>();
+        private int _ballCount => _balls.Count;
+
+        public static UnityEvent<Ball> OnBallSpawned = new UnityEvent<Ball>();
+        public static UnityEvent<Ball> OnBallRemoved = new UnityEvent<Ball>();
 
         private void Start()
         {
+            _balls.AddRange(FindObjectsOfType<Ball>());
             Obstacle.OnBallKicked.AddListener(DeactivateBall);
+            Gate.OnGateActivated.AddListener(DoMathOperation);
         }
 
         private void DeactivateBall(Ball ball)
         {
             ball.gameObject.SetActive(false);
-            _ballsPool.Add(ball);
+            BallPool.Inst.Add(ball);
         }
 
-        private bool TryGetBallFromPool(out Ball ball)
+        private void DoMathOperation(Func<int, int, int> operation, int secondArg)
         {
-            if (_ballsPool.Count == 0)
+            var result = operation(_ballCount, secondArg);
+            var difference = Mathf.Abs(result - _ballCount);
+            
+            if(result > _ballCount) AddBalls(difference);
+            else RemoveBalls(difference);
+        }
+
+        private void AddBalls(int count)
+        {
+            for (var i = 0; i < count; i++)
             {
-                ball = null;
-                return false;
+                if (!BallPool.Inst.TryGet(out var ball))
+                {
+                    ball = Instantiate(ballPrefab);
+                }
+                UpdatePosition(ball);
+                ball.Scaler.StartGrow();
+                ball.gameObject.SetActive(true);
+                _balls.Add(ball);
+                OnBallSpawned?.Invoke(ball);
             }
-            ball = _ballsPool[0];
-            _ballsPool.Remove(ball);
-            return true;
+        }
+
+        private void RemoveBalls(int count)
+        {
+            for (var i = 0; i < count; i++)
+            {
+                var ball = _balls[Random.Range(0, _balls.Count)];
+                ball.gameObject.SetActive(false);
+                _balls.Remove(ball);
+                BallPool.Inst.Add(ball);
+                OnBallRemoved?.Invoke(ball);
+                
+                if (_balls.Count == 0)
+                {
+                    Debug.Log("Game over");
+                    return;
+                }
+            }
         }
         
-        private void SpawnBall()
+        private void UpdatePosition(Ball ball)
         {
             var spawnPos = new Vector3(transform.position.x, 0, transform.position.z);
-
             var spawnOffsetXZ = Random.insideUnitSphere;
+
             spawnOffsetXZ.y = 0;
             spawnPos += spawnOffsetXZ;
-            
-            var ball = Instantiate(ballPrefab, spawnPos, Quaternion.identity);
-            //balls.Add(ball);
-            ball.transform.SetParent(transform);
+            ball.transform.position = spawnPos;
+            ball.transform.SetParent(attractor);
         }
     }
 }

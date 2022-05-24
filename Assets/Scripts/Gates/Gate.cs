@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,11 +9,32 @@ namespace Gates
     {
         [SerializeField] private OperationType operationType;
         [SerializeField] private int secondArg = 10;
+        [SerializeField] private TextMeshPro operationLabel;
         
+        public UnityEvent OnActivated = new UnityEvent(); 
         public static UnityEvent<Func<int, int, int>, int> OnGateActivated = new UnityEvent<Func<int, int, int>, int>();
-        
+
+        private void Awake()
+        {
+            string str = "";
+            switch (operationType)
+            {
+                case OperationType.Difference:
+                    str = "-";
+                    break;
+                case OperationType.Multiplication:
+                    str = "*";
+                    break;
+                case OperationType.Sum:
+                    str = "+";
+                    break;
+            }
+            operationLabel.text = str + secondArg;
+        }
+
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("trigger");
             if (!other.transform.parent.CompareTag("Ball")) return;
                 
             switch (operationType)
@@ -27,7 +49,7 @@ namespace Gates
                     OnGateActivated?.Invoke(GateOperations.Sum, secondArg);
                     break;
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
