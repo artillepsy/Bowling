@@ -2,7 +2,7 @@
 
 namespace Balls
 {
-    public class BallDisappearVFX : MonoBehaviour
+    public class BallDisappearEffect : MonoBehaviour
     {
         [SerializeField] private Transform disappearPS;
         

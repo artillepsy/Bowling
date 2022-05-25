@@ -1,4 +1,5 @@
-﻿using Finish;
+﻿using BigBall;
+using Finish;
 using UnityEngine;
 
 namespace Attractor
@@ -14,6 +15,7 @@ namespace Attractor
         private void Start()
         {
             FinishLine.OnFinishReached.AddListener(() => _reachedFinish = true);
+           // BigBallLauncher.OnBigBallLaunched.AddListener(() => joystick.enabled = false);
         }
 
         private void Update()

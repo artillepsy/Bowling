@@ -9,23 +9,24 @@ namespace BigBall
         [SerializeField] private float rotationSpeed = 40f;
         [SerializeField] private float rotationTime = 1f;
         private float _time;
-        private bool _inputEnabled = false;
-
+        private bool _rotationEnabled = false;
+        public Vector3 Direction => arrowQuad.transform.forward;
         private void Start()
         {
             _time = rotationTime / 2f;
-            arrowQuad.SetActive(false);
-                
-            BigBallCreator.OnBigBallCreated.AddListener(() =>
-            {
-                _inputEnabled = true;
-                arrowQuad.SetActive(true);
-            });
+            ChangeRotationStatus(false);
+            BigBallCreator.OnBigBallCreated.AddListener(() => ChangeRotationStatus(true));
+            BigBallLauncher.OnBigBallLaunched.AddListener(() => ChangeRotationStatus(false));
         }
 
+        private void ChangeRotationStatus(bool status)
+        {
+            _rotationEnabled = status;
+            arrowQuad.SetActive(status);
+        }
         private void Update()
         {
-            if (!_inputEnabled) return;
+            if (!_rotationEnabled) return;
             arrowQuad.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
             _time += Time.deltaTime;
 

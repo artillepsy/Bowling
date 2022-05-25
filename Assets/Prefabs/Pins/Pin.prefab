@@ -48,7 +48,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 4589400775770849840}
   child: {fileID: 4831481035791038437}
-  ignoreBallsLayerName: Ignore balls
   kickImpulse: 1.7
   torqueImpulse: 0.78
   impulseOffsetZ: 0.5

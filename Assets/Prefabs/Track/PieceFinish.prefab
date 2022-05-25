@@ -303,11 +303,13 @@ GameObject:
   - component: {fileID: 7192099251562613069}
   - component: {fileID: 1819777752503879739}
   - component: {fileID: 1535889646}
+  - component: {fileID: 8273427759487674557}
   - component: {fileID: 1535889655}
   - component: {fileID: 6076958654462853276}
   - component: {fileID: 1729350273011685082}
   - component: {fileID: 6457235340435114070}
   - component: {fileID: 1535889656}
+  - component: {fileID: 8222100279410089717}
   m_Layer: 0
   m_Name: PieceFinish
   m_TagString: Trap
@@ -427,8 +429,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 45.232655, y: 10.010317, z: 91.10579}
-  m_Center: {x: 0, y: -5.0001583, z: 45.55137}
+  m_Size: {x: 21.95411, y: 10.010317, z: 50.55604}
+  m_Center: {x: -0.17074966, y: -5.0001583, z: 25.276495}
+--- !u!65 &8273427759487674557
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701991611797541906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 45.232655, y: 10.010317, z: 28.370224}
+  m_Center: {x: 0, y: -5.0001583, z: 76.91915}
 --- !u!111 &1535889655
 Animation:
   m_ObjectHideFlags: 0
@@ -502,6 +517,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finishedFollowTarget: {fileID: 6775171196386356241}
   finishedLookTarget: {fileID: 7799330362178031605}
+--- !u!64 &8222100279410089717
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6701991611797541906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4365318609617445759, guid: 94ee0582bac8bf64db47e4364fc90106, type: 3}
 --- !u!1 &7094669050662790864
 GameObject:
   m_ObjectHideFlags: 0
