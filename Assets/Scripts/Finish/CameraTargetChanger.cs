@@ -1,5 +1,6 @@
 ﻿using BigBall;
 using Cinemachine;
+using Literals;
 using UnityEngine;
 
 namespace Finish
@@ -22,7 +23,7 @@ namespace Finish
             BigBallCreator.OnBigBallCreated.AddListener(() =>
             {
                 _cam.LookAt = FindObjectOfType<BigBallScaleChanger>().transform;
-                _cam.GetComponent<Animation>().Play();
+                _cam.GetComponent<Animator>().SetTrigger(Parameters.BigBallCreated);
             });
         }
     }

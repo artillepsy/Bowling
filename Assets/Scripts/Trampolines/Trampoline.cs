@@ -11,12 +11,12 @@ namespace Trampolines
         [SerializeField] private float trampolineLength = 10f;
         
         private float _attractorSpeed;
-        private float _time;
+        private float _jumpTime;
 
         private void Start()
         {
             _attractorSpeed = FindObjectOfType<BallAttractorMovement>().ZSpeed;
-            _time = trampolineLength / _attractorSpeed;
+            _jumpTime = trampolineLength / _attractorSpeed;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -24,7 +24,7 @@ namespace Trampolines
             if (!other.CompareTag(Tags.Ball)) return;
             var comp = other.GetComponentInParent<Ball>();
             if (!comp) return;
-            comp.Jumper.Jump(animCurve, _time, trampolineLength);
+            comp.Jumper.Jump(animCurve, _jumpTime, trampolineLength);
         }
     }
 }

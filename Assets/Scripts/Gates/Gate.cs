@@ -9,21 +9,20 @@ namespace Gates
     public class Gate : MonoBehaviour
     {
         [SerializeField] private OperationType operationType;
-        [SerializeField] private int secondArg = 10;
         [SerializeField] private TextMeshPro operationLabel;
-        
+        [SerializeField] private int secondOperand = 10;
         [SerializeField] UnityEvent OnActivated = new UnityEvent(); 
         public static UnityEvent<Func<int, int, int>, int> OnGateActivated = new UnityEvent<Func<int, int, int>, int>();
         
         private void Awake()
         {
-            var str = operationType switch
+            var sign = operationType switch
             {
                 OperationType.Difference => "-",
                 OperationType.Multiplication => "*",
                 OperationType.Sum => "+"
             };
-            operationLabel.text = str + secondArg;
+            operationLabel.text = sign + secondOperand;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -33,13 +32,13 @@ namespace Gates
             switch (operationType)
             {
                 case OperationType.Difference:
-                    OnGateActivated?.Invoke(GateOperations.Difference, secondArg);
+                    OnGateActivated?.Invoke(GateOperations.Difference, secondOperand);
                     break;
                 case OperationType.Multiplication:
-                    OnGateActivated?.Invoke(GateOperations.Multiplication, secondArg);
+                    OnGateActivated?.Invoke(GateOperations.Multiplication, secondOperand);
                     break;
                 case OperationType.Sum:
-                    OnGateActivated?.Invoke(GateOperations.Sum, secondArg);
+                    OnGateActivated?.Invoke(GateOperations.Sum, secondOperand);
                     break;
             }
         }

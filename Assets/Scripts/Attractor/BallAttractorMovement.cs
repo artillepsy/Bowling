@@ -1,14 +1,14 @@
-﻿using BigBall;
-using Finish;
+﻿using Finish;
 using UnityEngine;
 
 namespace Attractor
 {
     public class BallAttractorMovement : MonoBehaviour
     {
+        [SerializeField] private Joystick joystick;
+        [Space]        
         [SerializeField] private float zSpeed = 3f;
         [SerializeField] private float xSpeed = 1f;
-        [SerializeField] private Joystick joystick;
         [SerializeField] private float xConstraints = 4f;
         private bool _reachedFinish = false;
         public float ZSpeed => zSpeed;
@@ -16,7 +16,6 @@ namespace Attractor
         private void Start()
         {
             FinishLine.OnFinishReached.AddListener(() => _reachedFinish = true);
-           // BigBallLauncher.OnBigBallLaunched.AddListener(() => joystick.enabled = false);
         }
 
         private void Update()
@@ -26,10 +25,11 @@ namespace Attractor
             var x = joystick.Horizontal;
             var velocity = new Vector3(x * xSpeed, 0, zSpeed) * Time.deltaTime;
             transform.Translate(velocity, Space.World);
-            ClampPosX();
+            
+            ClampXPosition();
         }
 
-        private void ClampPosX()
+        private void ClampXPosition()
         {
             if (transform.position.x > xConstraints)
             {

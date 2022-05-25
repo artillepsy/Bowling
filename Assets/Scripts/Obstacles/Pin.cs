@@ -6,10 +6,10 @@ namespace Obstacles
     public class Pin : Obstacle
     {
         [SerializeField] private Rigidbody rb;
-        [SerializeField] private GameObject child;
+        [SerializeField] private GameObject childGameObject;
         [Space]
-        [SerializeField] private float kickImpulse = 1.7f;
-        [SerializeField] private float torqueImpulse = 3.4f;
+        [SerializeField] private float kickImpulse = 3f;
+        [SerializeField] private float torqueImpulse = 0.7f;
         [SerializeField] private float impulseOffsetZ = 0.5f;
         
         protected void OnCollisionEnter(Collision collision)
@@ -18,7 +18,7 @@ namespace Obstacles
             
             if (!collision.collider.CompareTag(Tags.Ball)) return;
             
-            child.layer = Layers.IgnoreBallsLayer;
+            childGameObject.layer = Layers.IgnoreBallsLayer;
             
             var kickPoint = transform.position + Vector3.up * impulseOffsetZ;
             var direction = (kickPoint - collision.collider.transform.parent.position).normalized;

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4589400775770849840}
-  child: {fileID: 4831481035791038437}
+  childGameObject: {fileID: 4831481035791038437}
   kickImpulse: 3.08
   torqueImpulse: 0.65
   impulseOffsetZ: 0.5

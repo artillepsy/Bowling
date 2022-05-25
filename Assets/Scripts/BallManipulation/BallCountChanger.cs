@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Attractor;
 using Balls;
 using Gates;
 using Obstacles;
@@ -11,17 +12,18 @@ namespace BallManipulation
 {
     public class BallCountChanger : MonoBehaviour
     {
-        [SerializeField] private Transform attractor;
         [SerializeField] private Ball ballPrefab;
         private List<Ball> _balls = new List<Ball>();
+        private Transform _attractor;
         public List<Ball> Balls => _balls;
-        private int _ballCount => _balls.Count;
 
         public static UnityEvent<Ball> OnBallSpawned = new UnityEvent<Ball>();
         public static UnityEvent<Ball> OnBallRemoved = new UnityEvent<Ball>();
+        public static UnityEvent OnGameOver = new UnityEvent();
 
         private void Start()
         {
+            _attractor = FindObjectOfType<BallAttractor>().transform;
             _balls.AddRange(FindObjectsOfType<Ball>());
             Obstacle.OnBallKicked.AddListener(DeactivateBall);
             Gate.OnGateActivated.AddListener(DoMathOperation);
@@ -35,11 +37,9 @@ namespace BallManipulation
 
         private void DoMathOperation(Func<int, int, int> operation, int secondArg)
         {
-            var result = operation(_ballCount, secondArg);
-            var difference = Mathf.Abs(result - _ballCount);
-            Debug.Log(result);
-            Debug.Log(_ballCount);
-            if(result > _ballCount) AddBalls(difference);
+            var result = operation(_balls.Count, secondArg);
+            var difference = Mathf.Abs(result - _balls.Count);
+            if(result > _balls.Count) AddBalls(difference);
             else RemoveBalls(difference);
         }
 
@@ -68,24 +68,23 @@ namespace BallManipulation
                 _balls.Remove(ball);
                 BallPool.Inst.Add(ball);
                 OnBallRemoved?.Invoke(ball);
+
+                if (_balls.Count != 0) continue;
                 
-                if (_balls.Count == 0)
-                {
-                    Debug.Log("Game over");
-                    return;
-                }
+                OnGameOver?.Invoke();
+                return;
             }
         }
         
         private void UpdateBallPosition(Ball ball)
         {
-            var spawnPos = new Vector3(attractor.position.x, 0, attractor.position.z);
+            var spawnPos = new Vector3(_attractor.position.x, 0, _attractor.position.z);
             var spawnOffsetXZ = Random.insideUnitSphere * 0.2f;
 
             spawnOffsetXZ.y = 0;
             spawnPos += spawnOffsetXZ;
             ball.transform.position = spawnPos;
-            ball.transform.SetParent(attractor);
+            ball.transform.SetParent(_attractor);
         }
     }
 }
