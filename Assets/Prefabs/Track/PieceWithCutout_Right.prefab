@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 1980086458633446778}
   - component: {fileID: 662783008425431197}
   - component: {fileID: 6177635534505405613}
+  - component: {fileID: 3935143213177227764}
+  - component: {fileID: 1278131440826001148}
+  - component: {fileID: 6624051796097080195}
   m_Layer: 0
   m_Name: PieceWithCutout_Right
   m_TagString: Trap
@@ -88,6 +91,45 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3935143213177227764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323291010276113271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.976507, y: 10, z: 25}
+  m_Center: {x: -4.0117483, y: -5, z: 12.5}
+--- !u!65 &1278131440826001148
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323291010276113271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.041729, y: 10, z: 6.1835556}
+  m_Center: {x: 5.9791355, y: -5, z: 21.908222}
+--- !u!65 &6624051796097080195
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2323291010276113271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.084255, y: 10, z: 6.187916}
+  m_Center: {x: 5.9578724, y: -5, z: 3.093958}
 --- !u!1 &5392423673280116763
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,7 +142,7 @@ GameObject:
   - component: {fileID: 4360280774240839592}
   - component: {fileID: 2111467310495588290}
   - component: {fileID: 6807944911867112403}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,8 +225,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 14.213005, y: 26.1, z: 1}
+  m_Center: {x: 6.6065025, y: 0, z: 0}
 --- !u!1 &5433167450674449378
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +239,7 @@ GameObject:
   - component: {fileID: 7539106419138231029}
   - component: {fileID: 3106409294785871045}
   - component: {fileID: 7254893011720183539}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,8 +322,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 8.284887, y: 26.1, z: 1}
+  m_Center: {x: -3.6424437, y: 0, z: 0}
 --- !u!1 &5631507127910116572
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +337,7 @@ GameObject:
   - component: {fileID: 611496987430672896}
   - component: {fileID: 483320965775577924}
   - component: {fileID: 7372574980046697969}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +446,7 @@ GameObject:
   - component: {fileID: 3912479540858244191}
   - component: {fileID: 3006912979112185250}
   - component: {fileID: 4577896547802571580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,8 +529,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 9.206932, y: 26.1, z: 1}
+  m_Center: {x: 4.103466, y: 0, z: 0}
 --- !u!1001 &6580552889987836350
 PrefabInstance:
   m_ObjectHideFlags: 0

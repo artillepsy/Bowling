@@ -8,6 +8,8 @@ namespace BigBall
         [SerializeField] private float startScale = 0f;
         [SerializeField] private float maxScale = 4f;
         private float _totalScale = 1f;
+        private int _usedBallsCount = 0;
+        public int UsedBallsCount => _usedBallsCount;
 
         private void Awake()
         {
@@ -16,6 +18,7 @@ namespace BigBall
 
         public void IncrementScale()
         {
+            _usedBallsCount++;
             if (_totalScale > maxScale) return;
             _totalScale += scaleIncrement;
             transform.localScale = Vector3.one * _totalScale; 

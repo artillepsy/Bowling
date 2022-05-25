@@ -1,4 +1,5 @@
 ﻿using Balls;
+using Literals;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,9 +11,9 @@ namespace Obstacles
 
         protected void OnCollisionEnter(Collision collision)
         {
-            if (!collision.collider.transform.parent.CompareTag("Ball")) return;
-            
-            var ball = collision.collider.transform.GetComponentInParent<Ball>();
+            if (!collision.collider.CompareTag(Tags.Ball)) return;
+            var ball = collision.collider.GetComponentInParent<Ball>();
+            if (!ball) return;
             OnBallKicked?.Invoke(ball);
         }
     }

@@ -275,7 +275,7 @@
           </e>
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
-            <e p="BallDisappearPs.cs" t="Include" />
+            <e p="BallDisappearEffect.cs" t="Include" />
             <e p="BallMovement.cs" t="Include" />
             <e p="BallScaleChanger.cs" t="Include" />
             <e p="BallVerticalPosFreezer.cs" t="Include" />

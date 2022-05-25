@@ -20,37 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PrepareBigBall.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PrepareBigBall.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BallMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BallMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/GateMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/GateMaterial.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gates/DoubleGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gates/DoubleGate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gates/Gate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gates/Gate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HighDampingZone.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HighDampingZone.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/Pin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/Pin.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinTriangle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinTriangle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RotationgObstacle_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RotationgObstacle_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinMesh.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinMesh.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceStraight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceStraight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Left.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Right.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/Start.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/Start.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallDirectionArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallDirectionArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +53,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Drag/Dragger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Drag/AttractorMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Drag/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttraction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/AttractorMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallComponents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/ObjectPool.cs" />
@@ -102,7 +85,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/TargetChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BigBallScaleChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CinemachineTargetChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/CameraTargetChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraTargetSetter.cs" />
@@ -110,7 +92,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallDirectionArrow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/GravityScaler.cs" />
@@ -118,6 +99,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/PinGiant.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/PinRbConstraints.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearVFX.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearPs.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" />
       </list>
     </option>
   </component>
@@ -164,7 +150,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653386658120</updated>
       <workItem from="1653386679147" duration="25527000" />
-      <workItem from="1653415671057" duration="37619000" />
+      <workItem from="1653415671057" duration="38471000" />
+      <workItem from="1653485713961" duration="2162000" />
     </task>
     <servers />
   </component>

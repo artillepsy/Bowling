@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2490374208474648522}
   - component: {fileID: 5313209911116112416}
   - component: {fileID: 8413431846597182380}
+  - component: {fileID: 3772985354523109478}
   m_Layer: 0
   m_Name: PieceStraight
   m_TagString: Trap
@@ -85,6 +86,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3772985354523109478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296644226865396463}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.000002, y: 10, z: 25}
+  m_Center: {x: -0.0000009536743, y: -5, z: 12.5}
 --- !u!1 &4107861339565197545
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +111,7 @@ GameObject:
   - component: {fileID: 5829457037397996031}
   - component: {fileID: 1037803049901398903}
   - component: {fileID: 8905701202883289931}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,8 +194,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10.796869, y: 14.91384, z: 1}
+  m_Center: {x: -4.8984346, y: 6.95692, z: 0}
 --- !u!1 &8989376452204651370
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +208,7 @@ GameObject:
   - component: {fileID: 961885629545418512}
   - component: {fileID: 2625706439095138286}
   - component: {fileID: 381068767440480432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,5 +291,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 9.688599, y: 20.833239, z: 1}
+  m_Center: {x: 4.3442993, y: 9.916619, z: 0}
