@@ -4,11 +4,12 @@ namespace Obstacles
 {
     public class Pin : Obstacle
     {
+        [SerializeField] private Rigidbody rb;
         [SerializeField] private GameObject child;
         [SerializeField] private string ignoreBallsLayerName = "Ignore balls";
-        [SerializeField] private Rigidbody rb;
-        [SerializeField] private float minKickImpulse = 1.7f;
-        [SerializeField] private float maxKickImpulse = 3.4f;
+        [Space]
+        [SerializeField] private float kickImpulse = 1.7f;
+        [SerializeField] private float torqueImpulse = 3.4f;
         [SerializeField] private float impulseOffsetZ = 0.5f;
         
         protected void OnCollisionEnter(Collision collision)
@@ -21,9 +22,9 @@ namespace Obstacles
             
             var kickPoint = transform.position + Vector3.up * impulseOffsetZ;
             var direction = (kickPoint - collision.collider.transform.parent.position).normalized;
-            var impulse = Random.Range(minKickImpulse, maxKickImpulse);
             
-            rb.AddForce(direction * impulse, ForceMode.Impulse);
+            rb.AddForce(direction * kickImpulse, ForceMode.Impulse);
+            rb.AddTorque(Random.insideUnitSphere * torqueImpulse, ForceMode.Impulse);
         }
     }
 }

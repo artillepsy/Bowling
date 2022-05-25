@@ -287,6 +287,7 @@
           <e p="Obstacles" t="Include">
             <e p="Obstacle.cs" t="Include" />
             <e p="Pin.cs" t="Include" />
+            <e p="RotatingObstacle.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

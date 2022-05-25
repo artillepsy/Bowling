@@ -46,11 +46,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd0c8b0f4bb48789783877c5a6f48ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 4589400775770849840}
   child: {fileID: 4831481035791038437}
   ignoreBallsLayerName: Ignore balls
-  rb: {fileID: 4589400775770849840}
-  minKickImpulse: 2
-  maxKickImpulse: 3
+  kickImpulse: 1.7
+  torqueImpulse: 0.78
   impulseOffsetZ: 0.5
 --- !u!54 &4589400775770849840
 Rigidbody:

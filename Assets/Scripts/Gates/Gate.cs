@@ -16,19 +16,12 @@ namespace Gates
         
         private void Awake()
         {
-            string str = "";
-            switch (operationType)
+            var str = operationType switch
             {
-                case OperationType.Difference:
-                    str = "-";
-                    break;
-                case OperationType.Multiplication:
-                    str = "*";
-                    break;
-                case OperationType.Sum:
-                    str = "+";
-                    break;
-            }
+                OperationType.Difference => "-",
+                OperationType.Multiplication => "*",
+                OperationType.Sum => "+"
+            };
             operationLabel.text = str + secondArg;
         }
 
