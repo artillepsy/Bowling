@@ -20,49 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Levels.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Levels.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Parameters.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Parameters.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cam.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cam/CameraShake.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cam/CameraShake.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GiantPins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraDampingDecrease.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraDampingDecrease.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraDampnigIncrease.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraDampnigIncrease.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraLookToBigBall.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/CameraLookToBigBall.anim.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/ArrowMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ArrowMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Skybox.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Balls/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Balls/Ball.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/Obstacle4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/RotationgObstacle_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacles/RotationgObstacle_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/Pin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/Pin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraTargetSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraTargetSetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampolines/Trampoline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampolines/Trampoline.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/DestroyPS 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/DestroyPS 1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/DestroyPS.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VFX/DestroyPS.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,14 +49,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332C534-A8A4-4623-B2E5-CC943A0B790E/a6/7df5f0db/AnimationCurve.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.8.4/Runtime/Behaviours/CinemachineBrain.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateDeactivator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallColliderConstraintsChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallRigidbodyConstraintsChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallVerticalPosFreezer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" />
@@ -113,7 +84,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallJump.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallJumper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" />
@@ -130,8 +100,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallCreationEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Literals/Levels.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CinemachineCamera/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cam/CameraShake.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" />
       </list>
     </option>
   </component>
@@ -179,7 +153,7 @@
       <updated>1653386658120</updated>
       <workItem from="1653386679147" duration="25527000" />
       <workItem from="1653415671057" duration="38471000" />
-      <workItem from="1653485713961" duration="17473000" />
+      <workItem from="1653485713961" duration="21257000" />
     </task>
     <servers />
   </component>

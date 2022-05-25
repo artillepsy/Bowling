@@ -285,6 +285,9 @@
             <e p="BigBallLauncher.cs" t="Include" />
             <e p="BigBallScaleChanger.cs" t="Include" />
           </e>
+          <e p="Cam" t="Include">
+            <e p="CameraShake.cs" t="Include" />
+          </e>
           <e p="Finish" t="Include">
             <e p="BigBallCreator.cs" t="Include" />
             <e p="CameraTargetChanger.cs" t="Include" />
@@ -294,6 +297,9 @@
             <e p="Gate.cs" t="Include" />
             <e p="GateOperations.cs" t="Include" />
             <e p="OperationType.cs" t="Include" />
+          </e>
+          <e p="GiantPins" t="Include">
+            <e p="PinGiantFallDownChecker.cs" t="Include" />
           </e>
           <e p="Literals" t="Include">
             <e p="Layers.cs" t="Include" />

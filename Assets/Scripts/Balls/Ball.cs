@@ -32,6 +32,7 @@ namespace Balls
         {
             coll.enabled = false;
             rb.useGravity = false;
+            rb.mass = 0f;
         }
     }
 }
