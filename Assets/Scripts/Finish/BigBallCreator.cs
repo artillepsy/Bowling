@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using BallManipulation;
-using Balls;
+using BigBall;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,12 +8,12 @@ namespace Finish
 {
     public class BigBallCreator : MonoBehaviour
     {
-        [SerializeField] private BigBall bigBallPrefab;
+        [SerializeField] private BigBallScaleChanger bigBallScaleChangerPrefab;
         [SerializeField] private Transform bigBallCreationPos;
         [Space]
         [SerializeField] private float creationSpeed = 3f;
         private BallCountChanger _ballCountChanger;
-        private BigBall _bigBall;
+        private BigBallScaleChanger _bigBallScaleChanger;
         
         public static UnityEvent OnBigBallCreated = new UnityEvent();
 
@@ -23,7 +23,7 @@ namespace Finish
             
             FinishLine.OnFinishReached.AddListener(() =>
             {
-                _bigBall = Instantiate(bigBallPrefab, bigBallCreationPos.position, Quaternion.identity);
+                _bigBallScaleChanger = Instantiate(bigBallScaleChangerPrefab, bigBallCreationPos.position, Quaternion.identity);
                 StartCoroutine(CreateBigBallCO());
             });
         }
@@ -43,7 +43,7 @@ namespace Finish
                     if (finished)
                     {
                         ball.gameObject.SetActive(false);
-                        _bigBall.IncrementScale();
+                        _bigBallScaleChanger.IncrementScale();
                     }
                     else created = false;
                 }

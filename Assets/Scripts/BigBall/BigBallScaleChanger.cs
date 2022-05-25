@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Balls
+namespace BigBall
 {
-    public class BigBall : MonoBehaviour
+    public class BigBallScaleChanger : MonoBehaviour
     {
         [SerializeField] private float scaleIncrement = 0.3f;
         [SerializeField] private float startScale = 0f;

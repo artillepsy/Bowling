@@ -267,6 +267,7 @@
             <e p="BallAttractor.cs" t="Include" />
             <e p="BallAttractorMovement.cs" t="Include" />
             <e p="CameraDampingChanger.cs" t="Include" />
+            <e p="CameraTargetSetter.cs" t="Include" />
           </e>
           <e p="BallManipulation" t="Include">
             <e p="BallCountChanger.cs" t="Include" />
@@ -278,13 +279,15 @@
             <e p="BallMovement.cs" t="Include" />
             <e p="BallScaleChanger.cs" t="Include" />
             <e p="BallVerticalPosFreezer.cs" t="Include" />
-            <e p="BigBall.cs" t="Include" />
           </e>
-          <e p="Cameras" t="Include">
-            <e p="TargetChanger.cs" t="Include" />
+          <e p="BigBall" t="Include">
+            <e p="BigBallDirectionArrow.cs" t="Include" />
+            <e p="BigBallMovement.cs" t="Include" />
+            <e p="BigBallScaleChanger.cs" t="Include" />
           </e>
           <e p="Finish" t="Include">
             <e p="BigBallCreator.cs" t="Include" />
+            <e p="CameraTargetChanger.cs" t="Include" />
             <e p="FinishLine.cs" t="Include" />
           </e>
           <e p="Gates" t="Include">

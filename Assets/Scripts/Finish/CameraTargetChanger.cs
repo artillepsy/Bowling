@@ -1,15 +1,13 @@
-﻿using Cinemachine;
-using Finish;
+﻿using BigBall;
+using Cinemachine;
 using UnityEngine;
 
-namespace Cameras
+namespace Finish
 {
-    public class TargetChanger : MonoBehaviour
+    public class CameraTargetChanger : MonoBehaviour
     {
         [SerializeField] private Transform finishedFollowTarget;
         [SerializeField] private Transform finishedLookTarget;
-        [SerializeField] private float yOffsetAfterCreation = 4f;
-        
         private CinemachineVirtualCamera _cam;
 
         private void Start()
@@ -23,8 +21,8 @@ namespace Cameras
             });
             BigBallCreator.OnBigBallCreated.AddListener(() =>
             {
-                Debug.Log("Created");
-                finishedFollowTarget.transform.Translate(Vector3.up * yOffsetAfterCreation);
+                _cam.LookAt = FindObjectOfType<BigBallScaleChanger>().transform;
+                _cam.GetComponent<Animation>().Play();
             });
         }
     }
