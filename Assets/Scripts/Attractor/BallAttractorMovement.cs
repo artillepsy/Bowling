@@ -11,6 +11,7 @@ namespace Attractor
         [SerializeField] private Joystick joystick;
         [SerializeField] private float xConstraints = 4f;
         private bool _reachedFinish = false;
+        public float ZSpeed => zSpeed;
         
         private void Start()
         {

@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 7572167669591700767}
   - component: {fileID: 3956895461795108366}
   - component: {fileID: 6150775937679783205}
+  - component: {fileID: 2864713296448624093}
   m_Layer: 6
   m_Name: Ball
   m_TagString: Ball
@@ -168,6 +169,7 @@ MonoBehaviour:
   rb: {fileID: 4572324639277354039}
   movementComponent: {fileID: 7572167669591700767}
   scaleChangerComponent: {fileID: 3956895461795108366}
+  jumperComponent: {fileID: 2864713296448624093}
 --- !u!114 &7572167669591700767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,3 +212,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   disappearPS: {fileID: 412695464576827914, guid: 6f8b35b81e1965f4a94940b9a964d568,
     type: 3}
+--- !u!114 &2864713296448624093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912237262155316236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbd37c2b0d43414dbada05abd0a6c62e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

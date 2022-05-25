@@ -276,9 +276,9 @@
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
             <e p="BallDisappearEffect.cs" t="Include" />
+            <e p="BallJumper.cs" t="Include" />
             <e p="BallMovement.cs" t="Include" />
             <e p="BallScaleChanger.cs" t="Include" />
-            <e p="BallVerticalPosFreezer.cs" t="Include" />
           </e>
           <e p="BigBall" t="Include">
             <e p="BigBallDirectionArrow.cs" t="Include" />
@@ -303,6 +303,9 @@
             <e p="Obstacle.cs" t="Include" />
             <e p="Pin.cs" t="Include" />
             <e p="RotatingObstacle.cs" t="Include" />
+          </e>
+          <e p="Trampolines" t="Include">
+            <e p="Trampoline.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

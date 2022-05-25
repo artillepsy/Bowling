@@ -13,9 +13,11 @@ namespace Balls
         [Space]
         [SerializeField] private BallMovement movementComponent;
         [SerializeField] private BallScaleChanger scaleChangerComponent;
+        [SerializeField] private BallJumper jumperComponent;
 
         public BallMovement Movement => movementComponent;
         public BallScaleChanger ScaleChanger => scaleChangerComponent;
+        public BallJumper Jumper => jumperComponent;
         
         private void Start()
         {

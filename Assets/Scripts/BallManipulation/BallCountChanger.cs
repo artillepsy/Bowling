@@ -13,15 +13,12 @@ namespace BallManipulation
     {
         [SerializeField] private Transform attractor;
         [SerializeField] private Ball ballPrefab;
-        [SerializeField] private float afterSpawnDelay = 0.5f;
-        
         private List<Ball> _balls = new List<Ball>();
         public List<Ball> Balls => _balls;
         private int _ballCount => _balls.Count;
 
         public static UnityEvent<Ball> OnBallSpawned = new UnityEvent<Ball>();
         public static UnityEvent<Ball> OnBallRemoved = new UnityEvent<Ball>();
-        public static UnityEvent<float> OnAllSpawned = new UnityEvent<float>(); //
 
         private void Start()
         {
@@ -59,7 +56,6 @@ namespace BallManipulation
                 _balls.Add(ball);
                 OnBallSpawned?.Invoke(ball);
             }
-            OnAllSpawned?.Invoke(afterSpawnDelay);
         }
 
         private void RemoveBalls(int count)

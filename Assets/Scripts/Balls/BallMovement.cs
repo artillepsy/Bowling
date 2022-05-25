@@ -12,16 +12,22 @@ namespace Balls
 
         public void AddForceToTarget(Vector3 targetPos, float force)
         {
+            if (transform.position.y > 0)
+            {
+                rb.velocity = new Vector3(0, 0, 0);
+                return;
+            }
             var direction = (targetPos - transform.position);
             direction.y = 0;
-
+            
             if (direction.sqrMagnitude > _forceFalloffSqrDist)
             {
                 rb.AddForce(direction.normalized * force, ForceMode.Force);
                 return;
             }
+            
             var multiplier = direction.sqrMagnitude / _forceFalloffSqrDist;
-            rb.velocity = new Vector3(rb.velocity.x * multiplier, rb.velocity.y, rb.velocity.z);
+            rb.velocity = new Vector3(rb.velocity.x * multiplier, rb.velocity.y, rb.velocity.z * multiplier);
         }
 
         public bool FlyToTargetTowards(Vector3 targetPos, float speed)
