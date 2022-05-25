@@ -20,20 +20,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/TargetChanger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Cameras/TargetChanger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Finish.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Tags.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Tags.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DoubleGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DoubleGate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DoubleGate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DoubleGate.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gate.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gate.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GatePost.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GatePost.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HighDampingZone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HighDampingZone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pin.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinGiant.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinGiant.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinMesh.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinMesh.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinTriangle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PinTriangle.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceFinish.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Left.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Track/PieceWithCutout_Right.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaleChanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaleChanger.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,26 +100,36 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/AttractorMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallComponents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/ObjectPool.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateDeactivator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearVFX.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallColliderConstraintsChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallRigidbodyConstraintsChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallVerticalPosFreezer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaleChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Constants.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Literals.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Tags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Literals/Tags.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/BigBall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Cameras/TargetChanger.cs" />
       </list>
     </option>
   </component>
@@ -129,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653386658120</updated>
       <workItem from="1653386679147" duration="25527000" />
-      <workItem from="1653415671057" duration="16603000" />
+      <workItem from="1653415671057" duration="25773000" />
     </task>
     <servers />
   </component>

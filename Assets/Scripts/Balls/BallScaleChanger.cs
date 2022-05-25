@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Balls
 {
-    public class BallScaler : MonoBehaviour
+    public class BallScaleChanger : MonoBehaviour
     {
         [SerializeField] private float endScale = 1f;
         [Min(0.001f)]

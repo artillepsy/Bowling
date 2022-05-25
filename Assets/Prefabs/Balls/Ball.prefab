@@ -162,8 +162,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8226d4afaf9b4d3aaad285d4e38314d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minFinishDelay: 0.3
+  maxFinishDelay: 1
+  coll: {fileID: 3912237261990993000}
+  rb: {fileID: 4572324639277354039}
   movementComponent: {fileID: 7572167669591700767}
-  scalerComponent: {fileID: 3956895461795108366}
+  scaleChangerComponent: {fileID: 3956895461795108366}
 --- !u!114 &7572167669591700767
 MonoBehaviour:
   m_ObjectHideFlags: 0

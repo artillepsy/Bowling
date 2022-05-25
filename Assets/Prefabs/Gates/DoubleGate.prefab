@@ -397,6 +397,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HighDampingZone
       objectReference: {fileID: 0}
+    - target: {fileID: 404096560042820145, guid: aebc663fbfcf9504589d3e2814d62055,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 404096560042820149, guid: aebc663fbfcf9504589d3e2814d62055,
         type: 3}
       propertyPath: m_RootOrder

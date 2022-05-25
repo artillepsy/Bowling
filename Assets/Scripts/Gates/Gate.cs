@@ -1,4 +1,5 @@
 ﻿using System;
+using Literals;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -27,7 +28,7 @@ namespace Gates
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag("Ball")) return;
+            if (!other.CompareTag(Tags.Ball)) return;
             OnActivated?.Invoke();       
             switch (operationType)
             {

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Literals;
+using UnityEngine;
 
 namespace Obstacles
 {
@@ -6,7 +7,6 @@ namespace Obstacles
     {
         [SerializeField] private Rigidbody rb;
         [SerializeField] private GameObject child;
-        [SerializeField] private string ignoreBallsLayerName = "Ignore balls";
         [Space]
         [SerializeField] private float kickImpulse = 1.7f;
         [SerializeField] private float torqueImpulse = 3.4f;
@@ -16,9 +16,9 @@ namespace Obstacles
         {
             base.OnCollisionEnter(collision);
             
-            if (!collision.collider.transform.parent.CompareTag("Ball")) return;
+            if (!collision.collider.transform.parent.CompareTag(Tags.Ball)) return;
             
-            child.layer = LayerMask.NameToLayer(ignoreBallsLayerName);
+            child.layer = Layers.IgnoreBallsLayer;
             
             var kickPoint = transform.position + Vector3.up * impulseOffsetZ;
             var direction = (kickPoint - collision.collider.transform.parent.position).normalized;

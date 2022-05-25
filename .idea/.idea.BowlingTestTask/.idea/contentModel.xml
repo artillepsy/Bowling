@@ -276,13 +276,25 @@
             <e p="Ball.cs" t="Include" />
             <e p="BallDisappearVFX.cs" t="Include" />
             <e p="BallMovement.cs" t="Include" />
-            <e p="BallScaler.cs" t="Include" />
+            <e p="BallScaleChanger.cs" t="Include" />
             <e p="BallVerticalPosFreezer.cs" t="Include" />
+            <e p="BigBall.cs" t="Include" />
+          </e>
+          <e p="Cameras" t="Include">
+            <e p="TargetChanger.cs" t="Include" />
+          </e>
+          <e p="Finish" t="Include">
+            <e p="BigBallCreator.cs" t="Include" />
+            <e p="FinishLine.cs" t="Include" />
           </e>
           <e p="Gates" t="Include">
             <e p="Gate.cs" t="Include" />
             <e p="GateOperations.cs" t="Include" />
             <e p="OperationType.cs" t="Include" />
+          </e>
+          <e p="Literals" t="Include">
+            <e p="Layers.cs" t="Include" />
+            <e p="Tags.cs" t="Include" />
           </e>
           <e p="Obstacles" t="Include">
             <e p="Obstacle.cs" t="Include" />

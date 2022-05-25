@@ -8,10 +8,7 @@ namespace Balls
         [SerializeField] private float forceFalloffDistance = 1f;
         private float _forceFalloffSqrDist;
 
-        private void Awake()
-        {
-            _forceFalloffSqrDist = forceFalloffDistance * forceFalloffDistance;
-        }
+        private void Awake() => _forceFalloffSqrDist = forceFalloffDistance * forceFalloffDistance;
 
         public void AddForceToTarget(Vector3 targetPos, float force)
         {
@@ -25,6 +22,16 @@ namespace Balls
             }
             var multiplier = direction.sqrMagnitude / _forceFalloffSqrDist;
             rb.velocity = new Vector3(rb.velocity.x * multiplier, rb.velocity.y, rb.velocity.z);
+        }
+
+        public bool FlyToTargetTowards(Vector3 targetPos, float speed)
+        {
+            if (rb.useGravity) return false;
+            
+            var pos = Vector3.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+            if ((pos - targetPos).sqrMagnitude < 0.1f) return true;
+            rb.MovePosition(pos);
+            return false;
         }
     }
 }

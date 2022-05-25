@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Finish;
+using UnityEngine;
 
 namespace Attractor
 {
@@ -8,9 +9,17 @@ namespace Attractor
         [SerializeField] private float xSpeed = 1f;
         [SerializeField] private Joystick joystick;
         [SerializeField] private float xConstraints = 4f;
+        private bool _reachedFinish = false;
         
+        private void Start()
+        {
+            FinishLine.OnFinishReached.AddListener(() => _reachedFinish = true);
+        }
+
         private void Update()
         {
+            if (_reachedFinish) return;
+            
             var x = joystick.Horizontal;
             var velocity = new Vector3(x * xSpeed, 0, zSpeed) * Time.deltaTime;
             transform.Translate(velocity, Space.World);

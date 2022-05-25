@@ -7,7 +7,7 @@ TagManager:
   - Ball
   - Trampoline
   - Trap
-  - HignDampingZone
+  - HighDampingZone
   layers:
   - Default
   - TransparentFX

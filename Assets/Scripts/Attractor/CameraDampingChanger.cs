@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using Cinemachine;
+using Literals;
 using UnityEngine;
 
 namespace Attractor
@@ -10,17 +11,17 @@ namespace Attractor
         [SerializeField] private float inZoneDampingZ = 3f;
         [SerializeField] private float changeTime = 1f;
         
-        [SerializeField] private CinemachineVirtualCamera cam;
         private CinemachineTransposer _transposer;
         private int _zoneCount = 0;
         private void Start()
         {
+            var cam = FindObjectOfType<CinemachineVirtualCamera>();
             _transposer = cam.GetCinemachineComponent<CinemachineTransposer>();
         }
 
         private void OnTriggerEnter(Collider other)
         {
-            if (!other.CompareTag("HignDampingZone")) return;
+            if (!other.CompareTag(Tags.HighDampingZone)) return;
             
             _zoneCount++;
             if (_zoneCount > 1) return;
@@ -30,7 +31,7 @@ namespace Attractor
         
         private void OnTriggerExit(Collider other)
         {
-            if (!other.CompareTag("HignDampingZone")) return;
+            if (!other.CompareTag(Tags.HighDampingZone)) return;
             
             _zoneCount--;
             if (_zoneCount > 0) return;
