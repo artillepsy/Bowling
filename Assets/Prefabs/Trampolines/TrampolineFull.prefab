@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6365771747922001894}
   - component: {fileID: 3267209150562638601}
   - component: {fileID: 2751490098897805208}
+  - component: {fileID: 4122478933150653866}
+  - component: {fileID: 2864715178791530209}
   m_Layer: 0
   m_Name: TrampolineFull
   m_TagString: Trampoline
@@ -26,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367691392345965578}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.523212, y: -0.00050735474, z: 27.414055}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -98,3 +100,71 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 2001859200726255468, guid: 94ee0582bac8bf64db47e4364fc90106, type: 3}
+--- !u!114 &4122478933150653866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367691392345965578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd28827936445e395fb3e5fb3edebbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.18415433
+      outSlope: 0.5
+      tangentMode: 65
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.5
+      value: 0.75
+      inSlope: 0.5
+      outSlope: 0.5114261
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08323803
+    - serializedVersion: 3
+      time: 3.4106712
+      value: 0.95045644
+      inSlope: -0.29460725
+      outSlope: -0.29460725
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.25422475
+      outWeight: 0.16444764
+    - serializedVersion: 3
+      time: 5
+      value: 0
+      inSlope: -0.59802383
+      outSlope: 0
+      tangentMode: 5
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  trampolineLength: 5
+--- !u!65 &2864715178791530209
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367691392345965578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18, y: 1.5, z: 0}
+  m_Center: {x: 6.507017, y: 0.75, z: -1.5}

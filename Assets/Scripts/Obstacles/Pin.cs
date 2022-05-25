@@ -16,7 +16,7 @@ namespace Obstacles
         {
             base.OnCollisionEnter(collision);
             
-            if (!collision.collider.transform.parent.CompareTag(Tags.Ball)) return;
+            if (!collision.collider.CompareTag(Tags.Ball)) return;
             
             child.layer = Layers.IgnoreBallsLayer;
             

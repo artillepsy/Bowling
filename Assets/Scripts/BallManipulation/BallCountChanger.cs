@@ -37,7 +37,8 @@ namespace BallManipulation
         {
             var result = operation(_ballCount, secondArg);
             var difference = Mathf.Abs(result - _ballCount);
-            
+            Debug.Log(result);
+            Debug.Log(_ballCount);
             if(result > _ballCount) AddBalls(difference);
             else RemoveBalls(difference);
         }
