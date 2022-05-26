@@ -32,7 +32,10 @@ namespace BallManipulation
         private void DeactivateBall(Ball ball)
         {
             ball.gameObject.SetActive(false);
+            _balls.Remove(ball);
             BallPool.Inst.Add(ball);
+            if (_balls.Count != 0) return;
+            OnGameOver?.Invoke();
         }
 
         private void DoMathOperation(Func<int, int, int> operation, int secondArg)

@@ -16,6 +16,7 @@ namespace Attractor
         private void Start()
         {
             FinishLine.OnFinishReached.AddListener(() => _attractionActive = false);
+            BallCountChanger.OnGameOver.AddListener(() => _attractionActive = false);
             Obstacle.OnBallKicked.AddListener((ball) => balls.Remove(ball.Movement));
             BallCountChanger.OnBallSpawned.AddListener((ball) => balls.Add(ball.Movement));
         }

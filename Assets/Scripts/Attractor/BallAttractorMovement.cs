@@ -1,4 +1,5 @@
-﻿using Finish;
+﻿using BallManipulation;
+using Finish;
 using UnityEngine;
 
 namespace Attractor
@@ -10,17 +11,18 @@ namespace Attractor
         [SerializeField] private float zSpeed = 3f;
         [SerializeField] private float xSpeed = 1f;
         [SerializeField] private float xConstraints = 4f;
-        private bool _reachedFinish = false;
+        private bool _shouldMove = true;
         public float ZSpeed => zSpeed;
         
         private void Start()
         {
-            FinishLine.OnFinishReached.AddListener(() => _reachedFinish = true);
+            FinishLine.OnFinishReached.AddListener(() => _shouldMove = false);
+            BallCountChanger.OnGameOver.AddListener(() => _shouldMove = false);
         }
 
         private void Update()
         {
-            if (_reachedFinish) return;
+            if (!_shouldMove) return;
             
             var x = joystick.Horizontal;
             var velocity = new Vector3(x * xSpeed, 0, zSpeed) * Time.deltaTime;

@@ -8,25 +8,26 @@ namespace UI
 {
     public class VictoryCanvas : MonoBehaviour
     {
-        [SerializeField] private float showCanvasDelay = 4f;
-        
         [SerializeField] private GameObject canvas;
-        [SerializeField] private TextMeshProUGUI pinCountLabel;
-        
-        private int _pinsFallen = 0;
-        
+        [SerializeField] private float showCanvasDelay = 4f;
+        [SerializeField] private string fallenPinsMessage = " pins fallen";
+        [SerializeField] private TextMeshProUGUI fallenPinsLabel;
+        private int _fallenPins = 0;
         public static UnityEvent OnEndLevel = new UnityEvent();
-
+        
         private void Start()
         {
             canvas.SetActive(false);
-            PinGiantFallDownChecker.OnPinFallDown.AddListener(() => _pinsFallen++);           
+            PinGiantFallDownChecker.OnPinFallDown.AddListener(() => _fallenPins++);           
             BigBallLauncher.OnBigBallLaunched.AddListener(() => Invoke(nameof(ShowCanvas), showCanvasDelay));
         }
 
         private void ShowCanvas()
         {
-            
+            var pinCount = FindObjectsOfType<PinGiantFallDownChecker>().Length;
+            fallenPinsLabel.text = _fallenPins + "/" + pinCount + fallenPinsMessage;
+            canvas.SetActive(true);
+            OnEndLevel?.Invoke();
         }
     }
 }

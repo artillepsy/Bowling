@@ -282,7 +282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6314851847040925760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.52, z: 38}
+  m_LocalPosition: {x: 0, y: 3.54, z: 38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -484,8 +484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowQuad: {fileID: 4489246985087009381}
-  rotationSpeed: 90
-  rotationTime: 1
+  rotationSpeed: 120
+  rotationTime: 0.7
 --- !u!114 &1535889656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,6 +498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4744a92391ec4d28b24a21b9a4147a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bigBallCreationTarget: {fileID: 5570261236256727660}
   finishedFollowTarget: {fileID: 6775171196386356241}
   finishedLookTarget: {fileID: 7799330362178031605}
 --- !u!64 &8222100279410089717
@@ -672,7 +673,7 @@ PrefabInstance:
     - target: {fileID: 5774479367860008430, guid: 8bb3fc2febaa4b7479d0c99fe180edd3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 66.75
+      value: 65.23
       objectReference: {fileID: 0}
     - target: {fileID: 5774479367860008430, guid: 8bb3fc2febaa4b7479d0c99fe180edd3,
         type: 3}

@@ -1,12 +1,14 @@
 ﻿using BigBall;
 using Cinemachine;
 using Literals;
+using UI;
 using UnityEngine;
 
 namespace Finish
 {
     public class CameraTargetChanger : MonoBehaviour
     {
+        [SerializeField] private Transform bigBallCreationTarget;
         [SerializeField] private Transform finishedFollowTarget;
         [SerializeField] private Transform finishedLookTarget;
         private CinemachineVirtualCamera _cam;
@@ -24,6 +26,11 @@ namespace Finish
             {
                 _cam.LookAt = FindObjectOfType<BigBallScaleChanger>().transform;
                 _cam.GetComponent<Animator>().SetTrigger(Parameters.BigBallCreated);
+            }); 
+            VictoryCanvas.OnEndLevel.AddListener(() =>
+            {
+                _cam.LookAt = bigBallCreationTarget;
+                _cam.GetComponent<Animator>().SetTrigger(Parameters.OnEndLevel);
             });
         }
     }
