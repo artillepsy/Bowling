@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Balls
 {
+    /// <summary>
+    /// Increases the scale of a ball
+    /// </summary>
     public class BallScaleChanger : MonoBehaviour
     {
         [SerializeField] private float endScale = 1f;

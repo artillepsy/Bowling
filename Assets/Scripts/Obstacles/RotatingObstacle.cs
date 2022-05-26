@@ -2,6 +2,9 @@
 
 namespace Obstacles
 {
+    /// <summary>
+    /// Rotating obstacle
+    /// </summary>
     public class RotatingObstacle : Obstacle
     {
         [SerializeField] private float rotationSpeed = 60f;

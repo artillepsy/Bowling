@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Attractor
 {
+    /// <summary>
+    /// Moves attractor in z and x dimensions
+    /// </summary>
     public class BallAttractorMovement : MonoBehaviour
     {
         [SerializeField] private Joystick joystick;

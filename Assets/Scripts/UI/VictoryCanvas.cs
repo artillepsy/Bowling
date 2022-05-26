@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 namespace UI
 {
+    /// <summary>
+    /// Shows victory canvas after launch of big ball
+    /// </summary>
     public class VictoryCanvas : MonoBehaviour
     {
         [SerializeField] private GameObject canvas;
@@ -21,7 +24,7 @@ namespace UI
             PinGiantFallDownChecker.OnPinFallDown.AddListener(() => _fallenPins++);           
             BigBallLauncher.OnBigBallLaunched.AddListener(() => Invoke(nameof(ShowCanvas), showCanvasDelay));
         }
-
+        
         private void ShowCanvas()
         {
             var pinCount = FindObjectsOfType<PinGiantFallDownChecker>().Length;

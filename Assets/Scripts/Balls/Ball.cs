@@ -3,10 +3,13 @@ using UnityEngine;
 
 namespace Balls
 {
+    /// <summary>
+    /// Contains info about ball components
+    /// </summary>
     public class Ball : MonoBehaviour
     {
-        [SerializeField] private float minFinishDelay = 0.3f;
-        [SerializeField] private float maxFinishDelay = 0.7f;
+        [SerializeField] private float minBigBallCreationDelay = 0.3f;
+        [SerializeField] private float maxBigBallCreationDelay = 0.7f;
         [Space]        
         [SerializeField] private Collider coll;
         [SerializeField] private Rigidbody rb;
@@ -23,7 +26,7 @@ namespace Balls
         {
             FinishLine.OnFinishReached.AddListener(() =>
             {
-                var delay = Random.Range(minFinishDelay, maxFinishDelay);
+                var delay = Random.Range(minBigBallCreationDelay, maxBigBallCreationDelay);
                 Invoke(nameof(PrepareToBigBallCreation), delay);
             });
         }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Attractor
 {
+    /// <summary>
+    /// Changes cinemachine camera damping by setting values in camera animator
+    /// </summary>
     public class CameraDampingChanger : MonoBehaviour
     {
         private Animator _animator;

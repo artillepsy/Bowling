@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace Trampolines
 {
+    /// <summary>
+    /// Contains info about jump curve and jump time
+    /// </summary>
     public class Trampoline : MonoBehaviour
     {
         [SerializeField] private AnimationCurve animCurve;

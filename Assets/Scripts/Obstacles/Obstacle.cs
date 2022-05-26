@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 namespace Obstacles
 {
+    /// <summary>
+    /// Base class for obstacles which destroy balls
+    /// </summary>
     public class Obstacle : MonoBehaviour
     {
         public static UnityEvent<Ball> OnBallKicked = new UnityEvent<Ball>();

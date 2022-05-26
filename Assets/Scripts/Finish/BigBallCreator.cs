@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 namespace Finish
 {
+    /// <summary>
+    /// Attracts all active balls to a point of big ball creation
+    /// </summary>
     public class BigBallCreator : MonoBehaviour
     {
         [SerializeField] private BigBallScaleChanger bigBallScaleChangerPrefab;

@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Balls
 {
+    /// <summary>
+    /// Controls jump behaviour of a ball
+    /// </summary>
     public class BallJumper : MonoBehaviour
     {
         public void Jump(AnimationCurve yCurve, float time, float curveLength)

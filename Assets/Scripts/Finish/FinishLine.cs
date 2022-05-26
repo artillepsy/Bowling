@@ -4,6 +4,9 @@ using UnityEngine.Events;
 
 namespace Finish
 {
+    /// <summary>
+    /// Checking for reach the finish line
+    /// </summary>
     public class FinishLine : MonoBehaviour
     {
         public static UnityEvent OnFinishReached = new UnityEvent();

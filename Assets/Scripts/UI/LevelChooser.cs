@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 namespace UI
 {
+    /// <summary>
+    /// Changes level
+    /// </summary>
     public class LevelChooser : MonoBehaviour
     {
         [SerializeField] private Levels nextLevel = Levels.Second;
@@ -24,7 +27,6 @@ namespace UI
             {
                 Levels.First => LevelNames.Level1,
                 Levels.Second => LevelNames.Level2,
-                Levels.Third => LevelNames.Level3,
             };
         }
     }

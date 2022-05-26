@@ -2,6 +2,9 @@
 
 namespace BigBall
 {
+    /// <summary>
+    /// Increases big ball scale
+    /// </summary>
     public class BigBallScaleChanger : MonoBehaviour
     {
         [SerializeField] private Transform particleSystem;

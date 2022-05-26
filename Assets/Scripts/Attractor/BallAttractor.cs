@@ -6,7 +6,9 @@ using Obstacles;
 using UnityEngine;
 
 namespace Attractor
-{
+{    /// <summary>
+     /// Physically attracts balls to a group 
+     /// </summary>
     public class BallAttractor : MonoBehaviour
     {
         [SerializeField] private List<BallMovement> balls;

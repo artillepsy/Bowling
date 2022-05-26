@@ -6,6 +6,9 @@ using UnityEngine.Events;
 
 namespace Gates
 {
+    /// <summary>
+    /// Manipulates ball count 
+    /// </summary>
     public class Gate : MonoBehaviour
     {
         [SerializeField] private OperationType operationType;

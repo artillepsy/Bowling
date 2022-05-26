@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace Obstacles
 {
+    /// <summary>
+    /// Obstacle which get impulse after contact with ball
+    /// </summary>
     public class Pin : Obstacle
     {
         [SerializeField] private Rigidbody rb;

@@ -4,6 +4,9 @@ using UnityEngine.Events;
 
 namespace BigBall
 {
+    /// <summary>
+    /// Launches big ball
+    /// </summary>
     public class BigBallLauncher : MonoBehaviour
     {
         [SerializeField] private BigBallScaleChanger scaler;

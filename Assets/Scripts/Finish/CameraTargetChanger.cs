@@ -6,6 +6,9 @@ using UnityEngine;
 
 namespace Finish
 {
+    /// <summary>
+    /// Changes cinemachine camera's targets 
+    /// </summary>
     public class CameraTargetChanger : MonoBehaviour
     {
         [SerializeField] private Transform bigBallCreationTarget;

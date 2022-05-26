@@ -2,6 +2,9 @@
 
 namespace Balls
 {
+    /// <summary>
+    /// Instantiates particle effect after disabling ball
+    /// </summary>
     public class BallDisappearEffect : MonoBehaviour
     {
         [SerializeField] private Transform disappearPS;

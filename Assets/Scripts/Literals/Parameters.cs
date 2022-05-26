@@ -2,6 +2,9 @@
 
 namespace Literals
 {
+    /// <summary>
+    /// Container of cinemachine camera animator parameters
+    /// </summary>
     public static class Parameters
     {
         public static readonly int EnterDamping = Animator.StringToHash("OnEnterDampingZone");

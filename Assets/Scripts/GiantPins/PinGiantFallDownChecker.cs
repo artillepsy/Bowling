@@ -5,6 +5,9 @@ using UnityEngine.Events;
 
 namespace GiantPins
 {
+    /// <summary>
+    /// Checks for giant pin fall down
+    /// </summary>
     public class PinGiantFallDownChecker : MonoBehaviour
     {
         [SerializeField] private float maxUpDeviationAngle = 45f;

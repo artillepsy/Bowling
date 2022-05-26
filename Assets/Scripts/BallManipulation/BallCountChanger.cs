@@ -10,6 +10,9 @@ using Random = UnityEngine.Random;
 
 namespace BallManipulation
 {
+    /// <summary>
+    /// Adds and removes balls in a scene
+    /// </summary>
     public class BallCountChanger : MonoBehaviour
     {
         [SerializeField] private Ball ballPrefab;

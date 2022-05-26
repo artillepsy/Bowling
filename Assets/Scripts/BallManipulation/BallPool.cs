@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace BallManipulation
 {
+    /// <summary>
+    /// contains info about inactive balls on scene
+    /// </summary>
     public class BallPool : MonoBehaviour
     {
         public static BallPool Inst { get; private set; }

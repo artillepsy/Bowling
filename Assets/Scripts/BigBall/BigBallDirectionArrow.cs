@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace BigBall
 {
+    /// <summary>
+    /// Controls direction arrow of a big ball at the end of a level
+    /// </summary>
     public class BigBallDirectionArrow : MonoBehaviour
     {
         [SerializeField] private GameObject arrowQuad;

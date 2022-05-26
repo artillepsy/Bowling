@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Cam
 {
+    /// <summary>
+    /// Shakes the cinemachine camera after big ball launch
+    /// </summary>
     public class CameraShake : MonoBehaviour
     {
         [SerializeField] private float amplitude = 1f;
