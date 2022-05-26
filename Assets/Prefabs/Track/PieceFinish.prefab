@@ -484,8 +484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowQuad: {fileID: 4489246985087009381}
-  rotationSpeed: 120
-  rotationTime: 0.7
+  rotationSpeed: 80
+  rotationTime: 1
 --- !u!114 &1535889656
 MonoBehaviour:
   m_ObjectHideFlags: 0
