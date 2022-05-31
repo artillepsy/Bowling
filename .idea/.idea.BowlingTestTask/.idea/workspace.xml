@@ -20,43 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/BallAttractorMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraDampingChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraTargetSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attractor/CameraTargetSetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallCountChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallManipulation/BallPool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallDisappearEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallJumper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallJumper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaleChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/BallScaleChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallDirectionArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallDirectionArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallLauncher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BigBall/BigBallScaleChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cam/CameraShake.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cam/CameraShake.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Layers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Literals/LevelNames.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/LevelNames.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Literals/Parameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Parameters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Literals/Tags.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Literals/Tags.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/Pin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Trampolines/Trampoline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Trampolines/Trampoline.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/FailCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/FailCanvas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,9 +93,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/RotatingObstacle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Trampolines/Trampoline.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/FailCanvas.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" />
       </list>
     </option>
   </component>
@@ -174,7 +144,7 @@
       <workItem from="1653386679147" duration="25527000" />
       <workItem from="1653415671057" duration="38471000" />
       <workItem from="1653485713961" duration="25140000" />
-      <workItem from="1653544556467" duration="3582000" />
+      <workItem from="1653544556467" duration="4323000" />
     </task>
     <servers />
   </component>
