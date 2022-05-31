@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd5ab9631dd545f1af1b36537afc6009, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxUpDeviationAngle: 30
+  maxUpDeviationAngle: 15
 --- !u!1001 &7386599256706425643
 PrefabInstance:
   m_ObjectHideFlags: 0

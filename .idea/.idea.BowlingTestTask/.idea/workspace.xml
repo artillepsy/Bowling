@@ -20,13 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65cad53d-b209-4d54-863b-e48433398bea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BowlingTestTask/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Balls/BigBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pins/PinGiant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Finish/BigBallCreator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Finish/CameraTargetChanger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Finish/FinishLine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/OperationType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gates/GateOperations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GiantPins/PinGiantFallDownChecker.cs" />
@@ -96,6 +94,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Levels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/VictoryCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/LevelChooser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gates/Gate.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +144,7 @@
       <workItem from="1653415671057" duration="38471000" />
       <workItem from="1653485713961" duration="25140000" />
       <workItem from="1653544556467" duration="4323000" />
+      <workItem from="1654029115340" duration="1379000" />
     </task>
     <servers />
   </component>

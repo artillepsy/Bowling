@@ -22,7 +22,7 @@ namespace Gates
             var sign = operationType switch
             {
                 OperationType.Difference => "-",
-                OperationType.Multiplication => "*",
+                OperationType.Multiplication => "x",
                 OperationType.Sum => "+"
             };
             operationLabel.text = sign + secondOperand;
