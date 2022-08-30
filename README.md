@@ -1,11 +1,27 @@
 # Bowling
 
-Gameplay video:
+### Description
 
-https://youtube.com/shorts/4k_-QtQ35Wc?feature=share
+It's a Hyper Casual game for Android. You should deliver as many as possible balls to the finish.
+Then remaining balls transform to a big ball which you should push to skittles. if balls collide with skittles they destroy.
 
-Screenshots:
+### Features
 
-![Screenshot 2022-05-26 101848](https://user-images.githubusercontent.com/86905093/170438267-11331bef-cadf-4687-9ebd-bc23af855c41.png)
+In this project were used:
 
-![Screenshot 2022-05-26 102035](https://user-images.githubusercontent.com/86905093/170438532-a700ffe9-7489-430e-874c-6a610c1de153.png)
+- Cinemachine
+- Particle System
+
+And created:
+
+- Pool of balls
+
+### Gameplay video
+
+<sub>Click on image to play</sub>
+
+[<img src="https://img.youtube.com/vi/zoIBY3BiMow/hqdefault.jpg" width="50%">](https://youtu.be/zoIBY3BiMow)
+
+### Summary
+
+This game is a test task which made for 2 days.
